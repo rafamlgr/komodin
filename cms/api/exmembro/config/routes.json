@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/exmembros",
+      "handler": "Exmembro.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exmembros/count",
+      "handler": "Exmembro.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exmembros/:_id",
+      "handler": "Exmembro.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/exmembros",
+      "handler": "Exmembro.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/exmembros/:_id",
+      "handler": "Exmembro.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/exmembros/:_id",
+      "handler": "Exmembro.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

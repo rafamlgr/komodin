@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "exmembro",
+  "info": {
+    "name": "exmembro",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "apelidoex": {
+      "required": true,
+      "type": "string"
+    },
+    "nomeex": {
+      "required": true,
+      "type": "string"
+    },
+    "imgex": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "autor": {
+      "model": "user",
+      "via": "exmembros",
+      "plugin": "users-permissions"
+    }
+  }
+}

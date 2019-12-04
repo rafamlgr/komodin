@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "download",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nomedownload": {
+      "required": true,
+      "type": "string"
+    },
+    "arquivo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "autor-download": {
+      "model": "user",
+      "via": "downloads",
+      "plugin": "users-permissions"
+    }
+  }
+}

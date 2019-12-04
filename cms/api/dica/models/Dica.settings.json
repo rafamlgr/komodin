@@ -1,0 +1,46 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "dica",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "titulodica": {
+      "required": true,
+      "type": "string"
+    },
+    "explicacao": {
+      "required": true,
+      "type": "text"
+    },
+    "fotomidia": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "videoexplicacao": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "autor-dica": {
+      "model": "user",
+      "via": "dicas",
+      "plugin": "users-permissions"
+    },
+    "categoriadica": {
+      "required": true,
+      "enum": [
+        "Programação",
+        "Arena",
+        "Montagem"
+      ],
+      "type": "enumeration"
+    }
+  }
+}

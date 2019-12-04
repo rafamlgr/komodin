@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/midias",
+      "handler": "Midia.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/midias/count",
+      "handler": "Midia.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/midias/:_id",
+      "handler": "Midia.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/midias",
+      "handler": "Midia.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/midias/:_id",
+      "handler": "Midia.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/midias/:_id",
+      "handler": "Midia.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

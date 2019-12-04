@@ -1,0 +1,46 @@
+{
+  "connection": "default",
+  "collectionName": "membro",
+  "info": {
+    "name": "membro",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "apelido": {
+      "required": true,
+      "type": "string"
+    },
+    "nomecompleto": {
+      "required": true,
+      "type": "string"
+    },
+    "datadeingresso": {
+      "default": "2018-04-26T00:00:00.000Z",
+      "required": true,
+      "type": "date"
+    },
+    "funcao": {
+      "required": true,
+      "enum": [
+        "Montador",
+        "Programador",
+        "Intermediário"
+      ],
+      "type": "enumeration"
+    },
+    "imgmembro": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "autor": {
+      "model": "user",
+      "via": "membros",
+      "plugin": "users-permissions"
+    }
+  }
+}

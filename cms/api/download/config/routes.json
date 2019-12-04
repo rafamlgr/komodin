@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/downloads",
+      "handler": "Download.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/downloads/count",
+      "handler": "Download.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/downloads/:_id",
+      "handler": "Download.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/downloads",
+      "handler": "Download.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/downloads/:_id",
+      "handler": "Download.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/downloads/:_id",
+      "handler": "Download.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "equipe",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nomeequipe": {
+      "required": true,
+      "type": "string"
+    },
+    "textoequipe": {
+      "required": true,
+      "type": "text"
+    },
+    "imgequipe": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "autor-equipe": {
+      "model": "user",
+      "via": "equipes",
+      "plugin": "users-permissions"
+    }
+  }
+}
