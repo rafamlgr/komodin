@@ -1,0 +1,47 @@
+.pagefooter{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: #f6b540;
+  padding-top: 20px;
+}
+table{
+  width: 80%;
+  border: 0;
+  font-size: 14px;
+  color: white;
+  border-collapse: collapse;
+  margin-left: 10%;
+}
+
+td{
+  width: 32%;
+  padding: 4%;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.endereco h5{
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.container{
+  padding-top: 10px;
+  height: 50px;
+  margin-top: 1.6em;
+  width: 100%;
+  text-align: center;
+  background-color: #d29a35;
+  color: #fff;
+  font-size: 14px;
+}
+.arrumartop{
+  border-top: 1px solid #ddd;
+}
+.arrumarbot{
+  border-bottom: 1px solid #ddd;
+}

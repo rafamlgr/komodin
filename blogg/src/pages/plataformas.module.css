@@ -1,0 +1,48 @@
+.titulosistemas{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 48pt;
+  color: #fff;
+  letter-spacing: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.imgsistemas{
+  width: 100%;
+  height: 250px;
+  background-image: url(../../static/plataformas.png);
+  background-size: cover;
+  padding-top: 75px;
+}
+
+.diferenca{
+  background-color: #f6b540;
+  width: 280px;
+  height: 450px;
+  padding: 18px; 
+  box-shadow: 8px 8px 0 #d29a35;
+  -webkit-box-shadow: 8px 8px 0 #d29a35;
+  -moz-box-shadow: 8px 8px 0 #d29a35;
+  margin-bottom: 35px;
+  color: white;
+}
+
+.todossistemas{
+  display: inline-flex;
+  margin-left: 26%;
+  margin-bottom: 35px;
+}
+
+.lego{
+  margin-right: 35px;
+}
+
+.lego h1, .arduino h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 35px;
+}
+
+.diferenca p{
+  font-size: 16px;
+}

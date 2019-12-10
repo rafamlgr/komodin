@@ -1,0 +1,74 @@
+.down{
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.titulodown{
+  font-family: 'Josefin Sans', serif;
+  font-size: 40pt;
+  color: #fff;
+  letter-spacing: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  position: absolute;
+  left: 100px;
+  top: 70px;
+}
+
+.todadown{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; 
+  width: 80%;
+  margin-left: 130px;
+  margin-bottom: 50px;
+}
+
+.square{
+	background-color: #f6b540;
+	border-radius: 10px;
+    width: 200px;
+    height: 130px;
+    float: left;
+    margin: 1rem;
+    position: relative;
+	margin-right: 25px;
+}
+
+.boxdown{
+	position: relative;
+}
+
+.innerdown{
+  background-color: #fff;
+  margin-right: 25px;
+  height: 60px;
+  width: 200px;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.innerdown h3{
+	color: #2d2c2b;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 15px;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
+.icon{
+  background-image: url(../../static/down.png);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin-left: 140px;
+  position: absolute;
+}
