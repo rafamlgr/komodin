@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "dica",
   "info": {
     "name": "dica",
     "description": ""
@@ -17,16 +17,11 @@
       "required": true,
       "type": "text"
     },
-    "fotomidia": {
+    "midiaexplicacao": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": true
-    },
-    "videoexplicacao": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
     },
     "autor-dica": {
       "model": "user",
@@ -37,7 +32,6 @@
       "required": true,
       "enum": [
         "Programação",
-        "Arena",
         "Montagem"
       ],
       "type": "enumeration"
